@@ -89,15 +89,8 @@ WSGI_APPLICATION = 'recipes.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'railway',
-        'USER': 'root',
-        'PASSWORD': 'gIphVGLlgGuNIAwGLrQCrNiYVRqjOwoc',
-        'HOST': 'monorail.proxy.rlwy.net',
-        'PORT': '29608',
-        'OPTIONS': {
-            'charset': 'utf8mb4',
-        }
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR/'db.sqlite3',
     }
 }
 
